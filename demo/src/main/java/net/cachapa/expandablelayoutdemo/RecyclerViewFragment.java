@@ -61,20 +61,16 @@ public class RecyclerViewFragment extends Fragment {
 
             public ViewHolder(View itemView) {
                 super(itemView);
-
                 expandableLayout = (ExpandableLayout) itemView.findViewById(R.id.expandable_layout);
                 expandableLayout.setInterpolator(new OvershootInterpolator());
                 expandableLayout.setOnExpansionUpdateListener(this);
                 expandButton = (TextView) itemView.findViewById(R.id.expand_button);
-
                 expandButton.setOnClickListener(this);
             }
 
             public void bind(int position) {
                 this.position = position;
-
                 expandButton.setText(position + ". Tap to expand");
-
                 expandButton.setSelected(false);
                 expandableLayout.collapse(false);
             }
@@ -86,7 +82,6 @@ public class RecyclerViewFragment extends Fragment {
                     holder.expandButton.setSelected(false);
                     holder.expandableLayout.collapse();
                 }
-
                 if (position == selectedItem) {
                     selectedItem = UNSELECTED;
                 } else {

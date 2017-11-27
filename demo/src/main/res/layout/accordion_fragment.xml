@@ -77,10 +77,16 @@
                 android:elevation="4dp"
                 android:gravity="center"
                 android:text="Fixed height"
-                android:textColor="#fff"/>
+                android:textColor="#fff" />
 
         </net.cachapa.expandablelayout.ExpandableLayout>
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:text="另一种方式ExpandableLayout" />
 </LinearLayout>

@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/list_item_background"
         android:elevation="6dp"
+        android:text="head"
         android:foreground="?selectableItemBackground"
         android:padding="16dp" />
 
